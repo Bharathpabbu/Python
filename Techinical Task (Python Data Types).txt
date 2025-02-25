@@ -1,0 +1,117 @@
+                                                                           Python Data Types
+1.What is Python data types how many data types are there in Python?
+A) Python data types are used to define the types of a variable.it defines what type of data we are going to store in a variable there are five data types in python 
+1.Numeric
+2.Sequence Type
+3.Boolean
+4.Set
+5.Dictionary
+1.Numeric: The numeric data type in Python represents the data that has a numeric value. A numeric value can be an integer, a floating number, or even a complex number. These values are defined as Python int, Python float, and Python complex classes in Python.
+Example : a = 50
+          print( type(a))
+          b = 10.5
+          print(type(b))
+          c = 4j
+          print(type(c))
+Output  : <class 'int'>
+          <class 'float'>
+          <class 'complex'>
+2.Sequence Type :The sequence Data Type in Python is the ordered collection of similar or different Python data types. Sequences allow storing of multiple values in an organized and efficient fashion. There are several sequence data types of Python:
+1. Python String : Strings in Python are arrays of bytes representing Unicode characters. A string is a collection of one or more characters put in a single quote, double-quote, or triple-quote. In Python, there is no character data type Python, a character is a string of length one. It is represented by str class.
+2. Python List : A list is an ordered collection of elements in however lists are mutable meaning their elements can be changed after creation. list is denoted by [].
+3. Python Tuple : A tuple is also ordered collection of elements in however tuple are immutable and cannot be modified . tuple is denoted by ().
+Example1 : Str1 = 'welcome to my world'
+          print(Str1)
+          Str1 = "i am a robot"
+          print(Str1)
+          print(type(Str1))
+          Str1 = '''i am a fish  and i live in water''' 
+          print(Str1)
+          print(type(Str1))
+          Str1 = '''humans for life'''
+          print(Str1)
+output : welcome to my world
+         i am a robot
+         <class 'str'>
+         i am a fish  and i live in water
+         <class 'str'>
+         humans for life
+Example2 : lst1 = []
+           print(lst1)
+           lst1= ['moneyformoney']
+           print(lst1)
+           lst1= ["money", "for", "money"]
+           print(lst1[0])
+           print(lst1[2])
+           lst1= [['money', 'for'], ['money']]
+           print(lst1)
+Output : []
+         ['moneyformoney']
+         money
+         money
+         [['money', 'for'], ['money']]
+Example3 : tup1 = ()
+           print(tup1)
+           tup1=('bharath', 'for')
+           print(tup1)
+           lst2 = [1, 2, 4, 5, 6]
+           print(lst2)
+           tup1=tuple('bharath')
+           print(tup1)
+           tup1 = (0,1,2,3,4,5)
+           tup2 = ('bharath', 'kumar')
+           tup3 = (tup1, tup2)
+           print(tup3)
+Output : ()
+         ('bharath', 'for')
+         [1, 2, 4, 5, 6]
+         ('b', 'h', 'a', 'r', 'a', 't', 'h')
+         ((0, 1, 2, 3, 4, 5), ('bharath', 'kumar'))
+3.Boolean : Python Data type with one of the two built-in values, True or False. Boolean objects that are equal to True are truthy (true), and those equal to False are falsy (false). However non-Boolean objects can be evaluated in a Boolean context as well and determined to be true or false. It is denoted by the class bool. 
+Example1 : print(type(True))
+          print(type(False))
+Output : <class 'bool'>
+         <class 'bool'>
+Example2 : a=True
+           print(type(a))
+           b=False
+           print(type(b))
+Output : <class 'bool'>
+         <class 'bool'>
+4. Set : A set in python is an unordered collection of unique elements.it does not allows duplicate values and is useful for operations like membership testing and removing duplicates from a sequence .set is denoted by ().
+Example1 : set1 = set(["money", "for", "money"])
+          print(set1)
+          for i in set1:
+          print(i, end=" ")
+          print("money" in set1)
+Output : {'for', 'money'}
+         for money True
+Example2 :set2 =set()
+          print(set2)
+          set2=set("moneyformoney")
+          print(set2)
+          set2=set(["money", "for", "money"])
+          print(set2)
+          set2=set([1, 2,"money", 4,"for", 6,"money"])
+          print(set2)
+Output : set()
+         {'m', 'e', 'o', 'r', 'y', 'n', 'f'}
+         {'money', 'for'}
+         {1, 2, 'for', 4, 6, 'money'}
+5.dictonary : A dictionary in python is an unordered collections of key values pairs .it allows you to store and retrieve values based on their associated keys, dictionary  is denoted by {}.
+Example : dict1 = {}
+          print(dict1)
+          dict1= {1: "money",2: "for", 3:"money"}
+          print(dict1)
+          dict1={"name":"bharath",1:[1, 2, 3, 4]}
+          print(dict1)
+          dict1=dict({1:"money",2:"for",3:"money"})
+          print(dict1)
+          dict1=dict([(1,'money'),(2,'for')])
+          print(dict1)
+Output : {}
+         {1: 'money', 2: 'for', 3: 'money'}
+         {'name': 'bharath', 1: [1, 2, 3, 4]}
+         {1: 'money', 2: 'for', 3: 'money'}
+         {1: 'money', 2: 'for'}
+
